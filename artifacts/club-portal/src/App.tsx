@@ -2,6 +2,9 @@ import { Switch, Route, Router as WouterRouter } from "wouter";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { setBaseUrl } from "@/lib/api-client-react";
+setBaseUrl("https://university-backend-twgh.onrender.com/api");
+
 import { AuthProvider } from "@/hooks/use-auth";
 import NotFound from "@/pages/not-found";
 
